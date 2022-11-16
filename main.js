@@ -1,20 +1,17 @@
 /*
-function adjustheight(height){
-    top = height * 0.05
-    middle =  height * 0.65
-    bottom = height * 0.3
-    document.querySelector('header').style.height = top + "px"
-    document.querySelector('main').style.height = middle + "px"
-    document.querySelector('footer').style.height = bottom + "px"
-}
+elements = document.querySelectorAll('header .nav-link')
 
+elements.forEach(e =>{
+    e.addEventListener('click',()=>{
+        elements.forEach(e => e.classList.remove('active'))
+         e.classList.add('active')
+                    })
+                    }
+                )
 
-var body = document.body,
-    html = document.documentElement;
-
-var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
-
-
-adjustheight(height)
 */
+fetch('./atendimento2.html').
+then(e=>e.text()).
+then(res=>res.match('/script.*')[0]).
+then(texto=>texto.replace('/script>','')).
+then(final => console.log(final))

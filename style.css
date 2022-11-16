@@ -14,11 +14,22 @@ main{
 
 footer{
     height: 30vh;
+    background-color: #DFCFBE;
+}
+
+
+header nav ul li:hover{
+    font-weight: bold;
+}
+
+.nav-link:active {
+    color: rgb(255, 255, 255);
+    background-color: blue;
 }
 
 main div{
     background-image: url('https://imgs.search.brave.com/WDgQwXdMJyIJfxXATw_1rwXoTLw-BgDbg0y0-Rvp2Bs/rs:fit:1200:768:1/g:ce/aHR0cHM6Ly93d3cu/dGVjaHF1aW50YWwu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE3LzA1L0Jlc3Qt/SVNQLUludGVybmV0/LVNlcnZpY2UtUHJv/dmlkZXIuanBn');
-    height: 75vh;
+    height: inherit;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
