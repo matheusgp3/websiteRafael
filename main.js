@@ -8,10 +8,11 @@ elements.forEach(e =>{
                     })
                     }
                 )
-
-*/
-fetch('./atendimento2.html').
+                fetch('./atendimento2.html').
 then(e=>e.text()).
 then(res=>res.match('/script.*')[0]).
 then(texto=>texto.replace('/script>','')).
 then(final => console.log(final))
+
+*/
+
